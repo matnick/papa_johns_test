@@ -1,0 +1,36 @@
+<div class="flex_comment_container">
+<div class="user_meta">
+    <div class="image">
+        <img src="images/boy48.gif" height="60"/>
+    </div>
+    <div class="text_meta">
+        <span class="username">Пользователь: {{comment.user_name}}</span>
+        <span class="email">Email: {{comment.user_email}}</span>
+        <span class="date">Дата: {{comment.date}}</span>
+    </div>
+</div>
+<div class="comment_text" ng-bind-html="comment.content">
+
+</div>
+<div class="comment_tools">
+    <a class="reply" ng-click="show_comment_popup(comment.id)" data-toggle="modal"
+       data-target="#myModal"><i class="fa fa-reply"></i></a>
+</div>
+</div>
+
+
+
+<div class="comment_group" ng-if="comment.related_comments">
+    <div class="comment" ng-repeat="comment in comment.related_comments" ng-include="'partials/commentTree.html'">
+    </div>
+</div>
+
+<!-- <div class="comment_meta col-md-4">
+        <div class="col-md-4"><img class="comment_image" height="40" src="images/boy48.gif" /></div>
+        <div class="col-md-8"><div>{{comment.user_name}}</div>
+        <div>{{comment.date}}</div></div>
+     </div>
+    <div class="col-md-8" ng-bind-html="comment.content">
+    </div>
+ <div ng-include="'partials/commentTree.html'" onload="comments = comment.related_comments"></div> -->
+

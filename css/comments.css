@@ -1,0 +1,108 @@
+.body-wrapper {
+    margin:0 auto;
+}
+
+.postcomment {
+    display:block;
+    margin:10px auto;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+.reply {cursor:pointer;}
+
+.margin-bottom {
+    margin-bottom:10px;
+}
+
+.post_content {
+    text-align:justify;
+}
+
+.image {
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right:15px;
+}
+
+.flex_comment_container {
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-flex-direction:row;
+    -ms-flex-direction:row;
+    flex-direction:row;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-bottom:15px;
+}
+
+.comment_tools {
+    margin-left:15px;
+}
+
+.comment_text {
+    width:350px;
+    text-align:left;
+    word-wrap: break-word;
+}
+
+.user_meta {
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-flex-direction:row;
+    -ms-flex-direction:row;
+    flex-direction:row;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.text_meta {
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right:15px;
+}
+
+.comment {
+    margin-left:15px;
+}
+
+.flex-center-button {
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    margin:20px 0;
+}
+
+.comment_meta {min-height:60px;}
+
+@media (min-width: 768px){
+    .modal-dialog {
+        width: 550px;
+        margin: 30px auto;
+    }
+}
